@@ -1,0 +1,18 @@
+1) use MySQL.txt to create Database 
+
+2) open cmd form "test" folder then in terminal:-  npm install  > npm run dev
+
+3) open file db.js in "fireAi_server" and make changes according   in ("<<---- changes here") 
+
+
+const connection = mysql.createPool({
+  host: "localhost",
+  user: "root",     <<-----  changes here
+  password: "Gaurav@98",   <<----- changes here
+  database: "fireai",     
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
+}); 
+
+4) open cmd from "fireAi_server" then in terminal :- node index.js
